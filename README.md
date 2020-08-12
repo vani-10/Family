@@ -1,5 +1,6 @@
 # Family
-class familymember:#This is a class holding family member objects 
+
+class familymember:           #This is a class holding family member objects 
 	def setData(self,name,age):
 		self.name=name
 		self.age=age
@@ -13,7 +14,7 @@ print("1.Add")
 print("2.Display")
 print("3.Update")
 print("4.Delete")
-family_list=[]#contains list of family members (which has family objects)
+family_list=[]               #contains list of family members (which has family objects)
 while True:
 	choice = input("Enter choice(1/2/3/4): ")
 	
@@ -63,4 +64,4 @@ while True:
 		print("Invalid Input")
 
 
-This repo contains my python scripts that I am working on CRUD operations currently
+#This repo contains my python scripts that I am working on CRUD operations currently
