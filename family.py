@@ -7,7 +7,15 @@ class familymember:           #This is a class holding family member objects
 		self.age=age
 	def displayData(self):
 		print("Name is: ",self.name)
-		print("Age is: ",self.age)			
+		print("Age is: ",self.age)
+#	def run(name):
+#		regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
+#		if(regex.search(name) == None):  
+#      			 print("Name is accepted") 
+#         
+#  		else: 
+#			 print("Name is not accepted.") 
+      			
 		
 print("Select operation.")
 print("1.Add")
@@ -28,7 +36,10 @@ while True:
 				print("Name can't begin with a number")
 			elif len(name) < 0:
 				print("minimum length should be at least one")
-			name=input("Enter the name:")
+			elif name.strip()=="":
+				print("Name cant be empty")
+
+			#name=input("Enter the name:")
 			age=int(input("Enter the age:"))
 			#create a object,fm of type family member.
 			#set fm with values read above
